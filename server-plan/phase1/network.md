@@ -22,6 +22,15 @@ ip addr add 192.168.30.1/24 dev enp5s0f0
 ip link set enp5s0f0 up
 ```
 
+But this is not enough! Any client on `192.168.30.0/24` will be unable to communicate with the internet, as once the packet is sent out via `enp6s0` there is now wau for it to be routed back. We need to also configure the server to setup a NAT rule via iptables:
+
+```
+iptables -t nat -A POSTROUTING -o enp6s0 -j MASQUERADE
+```
+
+See [this issue](https://github.com/ckcr4lyf/home-network/issues/1) for more info.
+
+
 ## Setting up router
 
 I had to reset my Netgear R6120. Then via Wifi, I changed it to "AP Mode", with static config (since my server doesn't have DHCP - yet?)
@@ -37,3 +46,8 @@ Gateway: 192.168.30.1
 A bit rough when I first plugged it in, not sure why. But after a couple of minutes, I was able to ping it from my server!
 
 I also connected my phone to the AP manually (static IP) , and was able to access my server's network. The total manual IP assigning seems to have worked!
+
+
+## Setting up device
+
+See [the device page](./device.md)
