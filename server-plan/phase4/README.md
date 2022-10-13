@@ -13,7 +13,7 @@ This gives me a new interface `tun1` on the subnet `10.8.0.102/24`.
 I also add a new routing table for this VPN connection to the internet, but making sure first that there is a route to the server with higher precedence:
 
 ```
-ip route add table 79 to 192.168.60.1 dev enp5s0f1 metric 10
+ip route add table 79 to 192.168.60.0/24 dev enp5s0f1 metric 10
 ip route add table 79 to 10.8.0.0/24 dev tun1 metric 100
 ip route add table 79 to default via 10.8.0.101 dev tun1 metric 100
 ```
