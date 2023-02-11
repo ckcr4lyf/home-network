@@ -41,5 +41,3 @@ sysctl -w net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -o enp6s0 -j MASQUERADE
 systemctl restart isc-dhcp-server.service
 ```
-
-
