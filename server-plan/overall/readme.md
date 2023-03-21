@@ -34,6 +34,12 @@ ip rule add from 192.168.60.0/24 table 79 priority 80
 iptables -A POSTROUTING -s 192.168.60.0/24 -o tun1 -j MASQUERADE -t nat
 ```
 
+Third: IP rule for local interface on VPN to make outgoing connections via VPN
+
+```sh
+ip rule add from 10.16.0.7 table 69 priority 71
+```
+
 ### Enable IP Forwrding, restart DHCP service
 
 ```sh
