@@ -47,3 +47,11 @@ sysctl -w net.ipv4.ip_forward=1
 iptables -t nat -A POSTROUTING -o enp6s0 -j MASQUERADE
 systemctl restart isc-dhcp-server.service
 ```
+
+### Block Smart Bulb
+
+BLock my Tuya "smart bulb" from accessing the internet:
+
+```
+iptables -A FORWARD -s 192.168.30.107/32 -j DROP
+```
