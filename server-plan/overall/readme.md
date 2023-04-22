@@ -34,18 +34,13 @@ ip rule add from 192.168.60.0/24 table 79 priority 80
 iptables -A POSTROUTING -s 192.168.60.0/24 -o tun1 -j MASQUERADE -t nat
 ```
 
-Third: IP rule for local interface on VPN to make outgoing connections via VPN
+Third: Wireguard stuffs:
 
 ```sh
-ip rule add from 10.16.0.7 table 69 priority 71
-```
-
-### Enable IP Forwrding, restart DHCP service
-
-```sh
-sysctl -w net.ipv4.ip_forward=1
-iptables -t nat -A POSTROUTING -o enp6s0 -j MASQUERADE
-systemctl restart isc-dhcp-server.service
+wg-quick up wg0
+ip route add table 91 to 10.10.0.0/24 dev wg0 metric 100
+ip route add table 91 to default via 10.10.0.1 dev wg0 metric 100
+ip rule add from 10.10.0.2 table 91 priority 91
 ```
 
 ### Block Smart Bulb
@@ -54,4 +49,12 @@ BLock my Tuya "smart bulb" from accessing the internet:
 
 ```
 iptables -A FORWARD -s 192.168.30.107/32 -j DROP
+```
+
+### Enable IP Forwrding, restart DHCP service
+
+```sh
+sysctl -w net.ipv4.ip_forward=1
+iptables -t nat -A POSTROUTING -o enp6s0 -j MASQUERADE
+systemctl restart isc-dhcp-server.service
 ```
