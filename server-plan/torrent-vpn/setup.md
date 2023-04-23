@@ -1,19 +1,7 @@
 # OpenVPN
 
-Outgoing connection to my VPS ruunning OpenVPN.
+Outgoing connection to my VPS via Wireguarg
 
-Local IP: `10.16.0.7`
+Local IP: `10.10.0.2`
 
-Routing:
-
-```
-ip route add table 69 to 192.168.30.0/24 dev enp5s0f0 metric 10
-ip route add table 69 to 10.16.0.0/24 dev tun0 metric 100
-ip route add table 69 to default via 10.16.0.1 dev tun0 metric 100
-```
-
-IP Rule to use correct route:
-
-```
-ip rule add from 10.16.0.7 table 69 priority 71
-```
+Routing: Refer to overall.
