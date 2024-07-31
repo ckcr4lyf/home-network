@@ -9,7 +9,7 @@ Also, by exposing the topolgy in public, I hope any glaring holes or similar may
 
 Fiber from my ISP into an ISP-own modem/switch/wifi-AP combo, which goes to my primary PC and my server.
 
-![Home Network Topology](./assets/home_network.drawio.svg)
+![Home Network Topology](./assets/home_network.drawio.png)
 
 ## The Plan
 
