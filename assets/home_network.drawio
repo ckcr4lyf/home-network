@@ -1,14 +1,16 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" version="24.7.6">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/134.0.0.0 Safari/537.36" version="24.7.7">
   <diagram id="XSpmjwDv6YQukVGVAW7J" name="Page-1">
-    <mxGraphModel dx="2037" dy="812" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2954" dy="2347" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="w-6K2_5cv4-Vw9-pHjed-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="w-6K2_5cv4-Vw9-pHjed-1" target="w-6K2_5cv4-Vw9-pHjed-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="w-6K2_5cv4-Vw9-pHjed-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="w-6K2_5cv4-Vw9-pHjed-1" target="w-6K2_5cv4-Vw9-pHjed-10" edge="1">
-          <mxGeometry relative="1" as="geometry" />
+        <mxCell id="w-6K2_5cv4-Vw9-pHjed-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="w-6K2_5cv4-Vw9-pHjed-1" edge="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="620" y="250" as="targetPoint" />
+          </mxGeometry>
         </mxCell>
         <mxCell id="w-6K2_5cv4-Vw9-pHjed-1" value="WAN: X.X.X.X&lt;br&gt;&lt;br&gt;ISP Fiber Modem&amp;nbsp;&lt;br&gt;(+ Wifi AP)&lt;br&gt;(+ Router)&lt;br&gt;&lt;br&gt;Local: 192.168.128.1" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="331" y="50" width="166" height="130" as="geometry" />
@@ -22,40 +24,52 @@
         <mxCell id="w-6K2_5cv4-Vw9-pHjed-7" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/computer_and_terminals/Personal_Computer.svg;" parent="1" vertex="1">
           <mxGeometry x="30" y="260" width="85.6" height="116.01" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="w-6K2_5cv4-Vw9-pHjed-10" target="FI3NDOHATiSsHyJCguVA-2">
+        <mxCell id="FI3NDOHATiSsHyJCguVA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="w-6K2_5cv4-Vw9-pHjed-10" target="FI3NDOHATiSsHyJCguVA-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="w-6K2_5cv4-Vw9-pHjed-10" value="Home Server&lt;br&gt;(+ Router)&lt;br&gt;(+ VPNs)&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Local: 192.168.128.139" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-          <mxGeometry x="520" y="270" width="160" height="110" as="geometry" />
+          <mxGeometry x="520" y="250" width="240" height="130" as="geometry" />
         </mxCell>
         <mxCell id="w-6K2_5cv4-Vw9-pHjed-12" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
-          <mxGeometry x="720" y="259.01" width="86.78" height="110" as="geometry" />
+          <mxGeometry x="790" y="260" width="86.78" height="110" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-1" value="enp6s0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="600" y="229.01" width="60" height="30" as="geometry" />
+        <mxCell id="FI3NDOHATiSsHyJCguVA-1" value="enp6s0" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="635" y="210" width="60" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-2" value="" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_128x128.png" vertex="1" parent="1">
+        <mxCell id="FI3NDOHATiSsHyJCguVA-2" value="" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_128x128.png" parent="1" vertex="1">
           <mxGeometry x="440" y="470" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-3" value="" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" vertex="1" parent="1">
+        <mxCell id="FI3NDOHATiSsHyJCguVA-3" value="" style="image;html=1;image=img/lib/clip_art/networking/Wireless_Router_N_128x128.png" parent="1" vertex="1">
           <mxGeometry x="710" y="470" width="80" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-6" value="Netgear Wifi AP&lt;br&gt;192.168.30.101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="FI3NDOHATiSsHyJCguVA-6" value="Netgear Wifi AP&lt;br&gt;192.168.30.101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="425" y="550" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="w-6K2_5cv4-Vw9-pHjed-10">
+        <mxCell id="FI3NDOHATiSsHyJCguVA-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=1;exitDx=0;exitDy=0;" parent="1" source="w-6K2_5cv4-Vw9-pHjed-10" edge="1">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="755" y="460" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-8" value="TP-Link Wifi AP&lt;br&gt;192.168.60.101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+        <mxCell id="FI3NDOHATiSsHyJCguVA-8" value="TP-Link Wifi AP&lt;br&gt;192.168.60.101" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" parent="1" vertex="1">
           <mxGeometry x="695" y="550" width="110" height="40" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-9" value="enp5s0f1: 192.168.30.1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" vertex="1" parent="1">
-          <mxGeometry x="440" y="376.01" width="130" height="30" as="geometry" />
+        <mxCell id="FI3NDOHATiSsHyJCguVA-9" value="enp5s0f1: 192.168.30.1" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+          <mxGeometry x="460" y="376.01" width="130" height="30" as="geometry" />
         </mxCell>
-        <mxCell id="FI3NDOHATiSsHyJCguVA-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;enp5s0f2: 192.168.60.1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" vertex="1" parent="1">
-          <mxGeometry x="630" y="376.01" width="130" height="30" as="geometry" />
+        <mxCell id="FI3NDOHATiSsHyJCguVA-10" value="&lt;font style=&quot;font-size: 10px;&quot;&gt;enp5s0f2: 192.168.60.1&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=8;" parent="1" vertex="1">
+          <mxGeometry x="695" y="376.01" width="130" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-2" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/security/Router_VPN.svg;" vertex="1" parent="1">
+          <mxGeometry x="55.45" y="-200" width="84.55" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-3" value="WAN: A.A.A.A&lt;br&gt;&lt;br&gt;WS VPN (Wireguard)&lt;br&gt;Local: 10.69.0.1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="-210" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-4" value="" style="image;points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image=img/lib/allied_telesis/security/Router_VPN.svg;" vertex="1" parent="1">
+          <mxGeometry x="414" y="-200" width="84.55" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-5" value="WAN: B.B.B.B&lt;br&gt;&lt;br&gt;OVH VPN (Wireguard)&lt;br&gt;Local: 10.10.0.1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="508.55" y="-210" width="160" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
