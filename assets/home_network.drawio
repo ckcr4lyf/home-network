@@ -71,6 +71,19 @@
         <mxCell id="duxJ4E-QFWCnUPxGBzy2-5" value="WAN: B.B.B.B&lt;br&gt;&lt;br&gt;OVH VPN (Wireguard)&lt;br&gt;Local: 10.10.0.1" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="508.55" y="-210" width="160" height="80" as="geometry" />
         </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.079;entryY=-0.031;entryDx=0;entryDy=0;entryPerimeter=0;strokeColor=#FF0000;dashed=1;" edge="1" parent="1" source="duxJ4E-QFWCnUPxGBzy2-3" target="w-6K2_5cv4-Vw9-pHjed-10">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="230" y="20" />
+              <mxPoint x="539" y="20" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;strokeColor=#FF0000;dashed=1;" edge="1" parent="1" source="duxJ4E-QFWCnUPxGBzy2-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="549" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
