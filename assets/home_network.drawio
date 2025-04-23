@@ -27,7 +27,7 @@
         <mxCell id="FI3NDOHATiSsHyJCguVA-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=1;exitDx=0;exitDy=0;" parent="1" source="w-6K2_5cv4-Vw9-pHjed-10" target="FI3NDOHATiSsHyJCguVA-2" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="w-6K2_5cv4-Vw9-pHjed-10" value="Home Server&lt;br&gt;(+ Router)&lt;br&gt;(+ VPNs)&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Local: 192.168.128.139" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+        <mxCell id="w-6K2_5cv4-Vw9-pHjed-10" value="Home Server&lt;br&gt;(+ Router)&lt;br&gt;(+ VPNs)&lt;br&gt;&lt;br style=&quot;border-color: var(--border-color);&quot;&gt;Local: 192.168.128.139&lt;div&gt;wg0: 10.10.0.2&lt;/div&gt;&lt;div&gt;wg2: 10.69.0.2&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="520" y="250" width="240" height="130" as="geometry" />
         </mxCell>
         <mxCell id="w-6K2_5cv4-Vw9-pHjed-12" value="" style="points=[];aspect=fixed;html=1;align=center;shadow=0;dashed=0;image;image=img/lib/allied_telesis/computer_and_terminals/Server_Desktop.svg;" parent="1" vertex="1">
@@ -83,6 +83,9 @@
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="549" y="250" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="duxJ4E-QFWCnUPxGBzy2-10" value="gateway: 10.10.0.1" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;fontSize=10;" vertex="1" parent="1">
+          <mxGeometry x="460" y="388" width="110" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
