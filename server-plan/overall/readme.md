@@ -11,15 +11,16 @@ Need to start the OpenVPN connections for the 10.8.0.0/24 (tun1) interfaces.
 #### First: Netgear Wifi AP should be connected to this port (physically left port when viewed from the back)
 
 ```sh
-wg-quick up wg1
+wg-quick up wg2
 ip addr add 192.168.30.1/24 dev enp5s0f0
 ip link set enp5s0f0 up
 
 ip route add table 69 to 192.168.30.0/24 dev enp5s0f0 metric 10
-ip route add table 69 to 10.15.0.0/24 dev wg1 metric 100
-ip route add table 69 to default via 10.15.0.1 dev wg1 metric 100
+ip route add table 69 to 10.69.0.0/24 dev wg2 metric 100
+ip route add table 69 to default via 10.69.0.1 dev wg2 metric 100
 ip rule add from 192.168.30.0/24 table 69 priority 70
-iptables -A POSTROUTING -s 192.168.30.0/24 -o wg1 -j MASQUERADE -t nat
+ip rule add from 10.69.0.2 table 69 priority 69
+iptables -A POSTROUTING -s 192.168.30.0/24 -o wg2 -j MASQUERADE -t nat
 ```
 
 #### Second: TP-Link Wifi AP should be connected to this port (physically left port when viewed from the back)
