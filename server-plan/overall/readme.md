@@ -44,6 +44,12 @@ ip route add table 91 to default via 10.10.0.1 dev wg0 metric 100
 ip rule add from 10.10.0.2 table 91 priority 91
 ```
 
+To limit speed on the interface (e.g. for OVH DDoS "protection"):
+
+```sh
+sudo tc qdisc add dev wg0 root tbf rate 180mbit latency 50ms burst 409600*
+```
+
 ### Block Smart Bulb
 
 BLock my Tuya "smart bulb" from accessing the internet:
